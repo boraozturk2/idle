@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IdleServerApplication {
+public class IdleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IdleServerApplication.class, args);
+		SpringApplication.run(IdleApplication.class, args);
 	}
 }
