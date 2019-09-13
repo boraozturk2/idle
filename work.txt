@@ -1,0 +1,352 @@
+﻿IGDAS	 	500203945558	04.07.2014	Hesaptan	771-12331580-351
+\\masfs01\BTOrtak
+odeme Agustos
+taxact pin 96110
+Allanz user:47478437
+N9005568@aknet.akb
+Yurtiçi Kargo İndirim Kodu: 268800065
+ERA da wst*.common*  için  <wb-module deploy-name="BSAEAR"> yap sanphot ı
+
+License key: D7W6B1PABZXLWXBN6T4JPSK76RK2P13VG7DWB-114-441-560-0A 
+Site Message: AKBANK TAS 
+
+TREASURY_CORE_COMMON_FRONT_END_SERVICE_CALL
+	
+prod makinaları
+N9005568
+PBSA03_RAC
+PBSA03_PRD
+ATLAS	BSAPAP1	172.31.128.227	AIX 7.1	PATLS01_RAC (Oracle)
+ATLAS	BSAPAP2	172.31.128.233	AIX 7.1	PATLS01_RAC (Oracle)
+ATLAS	BSAPAP3	172.31.128.229	AIX 7.1	PATLS01_RAC (Oracle)
+ATLAS	BSAPAP4	172.31.128.218	AIX 7.1	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODAPP1	172.31.135.246	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODAPP2	172.31.135.247	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODAPP3	172.31.133.152	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODSIGNALR1	172.31.135.250	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODSIGNALR2	172.31.135.251	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODREDIS1	172.31.135.248	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+ATLAS	TREPRODREDIS2	172.31.135.249	windows server 2012 r2 standart	PATLS01_RAC  (Oracle)
+awasbsap13.aknet.akb [172.31.208.23]
+awasbsap14.aknet.akb [172.31.208.24]
+
+http://bsaatlaslan.akbank.com.tr:80
+
+PBSA03_PRD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = orabsa03-prd.akbank.com.tr)(PORT = 1525))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = PBSA03_PRD)
+    )
+  )
+
+
+FTP uat
+ftpinttest.akbank.com.tr
+TREUATBSAFTP
+
+
+BASEPLUS_TRE
+PATLS01_RAC
+AKN05568
+atlsora-scan.akbank.com.tr
+1234-qwer
+
+BASEPLUS_BAU
+PBSA01_RAC
+AKN05568
+bsaorap-scan.akbank.com.tr
+1234Qwer
+
+BASEPLUS_BAU
+PLOG02
+AKN05568
+logorap2.akbank.com.tr
+Qu-14
+
+prod ldap Loy--622
+
+
+jira:L-777
+ftpinttest.akbank.com
+User      : TREUATWPFFTP             Pass       : WRYftp_23!
+User      : TREUATBSAFTP              Pass      : dYM12AWX7*
+
+prod ftp
+ftpint.akbank.com PORT : 22
+Kul: atlasftp/OrkrBs+8BZ
+
+ftp ftpint.akbank.com
+binary
+
+
+jira - N9005568 - ntpassword
+bsalog-bsalog123
+/projects/test/BSA/UAT/Library
+/projects/prod/BSA/Library/Venus
+
+ubsa - bbsaa_13
+DBSAUSR1- DBSAUSR1
+
+ATLAS Database Passwords
+USER TYPE	SCHEMA	PASSWORD
+OWNER	DTRE	Akbank_123
+	ITRE	Akbank_123
+	UTRE	Akbank_123
+	RTRE	Akbank_123
+	PTRE	Akbank_123
+APPLICATION	DTREUSR1	Akbank_321
+	ITREUSR1	Akbank_321
+	UTREUSR1	Akbank_321
+	RTREUSR1	Akbank_1234
+	PTREUSR1	Akbank_123
+
+SWIFT-QUEUE	
+UYG.HZN.SWIFT.TRE.SWF.UPD.RQ.01
+	
+MQ Makinaları
+------------------------------------------------------------------
+mqkonp1.akbank.com.tr              ==>         172.31.135.116
+mqkonp2.akbank.com.tr              ==>         172.31.135.117
+
+BSA Makinaları
+-----------------------------------------------------------------
+bsavenus                                            ==>         172.31.128.155 (netscaler) http://bsavenus.akbank.com.tr/BSAWEB/BSAWebService
+bsapap01                                             ==>         172.31.128.227
+bsapap02                                             ==>         172.31.128.233 
+bsapap03                                             ==>         172.31.128.229
+bsapap04                                             ==>         172.31.128.218
+bsapap05                                             ==>         172.31.128.226
+bsapap06                                             ==>         172.31.129.79
+bsapap07                                             ==>         172.31.129.80
+bsapap08                                             ==>         172.31.129.81
+
+DB Makinaları
+----------------------------------------------------------------
+atlsorap11                                           ==>         172.31.129.83
+atlsorap12                                           ==>         172.31.129.84 
+atlsorapdg11                                      ==>         172.31.129.85
+
+Önyüz Makinaları (NetScaler)
+----------------------------------------------------------------
+Akbank Treasury Trade Server    ==>        172.31.135.66 
+Akbank Treasury Cache Server  ==>        172.31.135.67
+
+-Dcom.sun.xml.ws.transport.http.client.HttpTransportPipe.dump=true
+-Dcom.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump=true 
+-Dcom.sun.xml.ws.transport.http.HttpAdapter.dump=true
+-Dcom.sun.xml.internal.ws.transport.http.HttpAdapter.dump=true
+
+
+C:\dev\eclipse\workspace3\workspace.support\batch>java -jar ZenaAdapter.jar EXECUTE TREASURY TREASURY_FIXEDINCOME_BOND_OFFSET_REPORT_BATCH_FOR_BOND http://bsauat1.akbank.com.tr:80
+
+<add key="ICoreService" value="http://trecoreuat.akbankpreprod.com/CoreService.svc" />
+http://wpfappdev/CoreService/CoreService.svc
+http://localhost/CoreService/CoreService.svc
+http://10.215.41.29/CoreService/CoreService.svc
+
+
+<record>
+	<Ortam>SIT 11g</Ortam>
+	<BeceriMerkeziVeIlgili>Hazine-Gürkan Kuş</BeceriMerkeziVeIlgili>
+	<Username>hazineUser</Username>
+	<Password>Hzn321*sit</Password>
+	<KullandigiServisler>GenelServisler</KullandigiServisler>
+</record>
+<record>
+	<Ortam>UAT 11g</Ortam>
+	<BeceriMerkeziVeIlgili>Hazine-Gürkan Kuş</BeceriMerkeziVeIlgili>
+	<Username>hazineUser</Username>
+	<Password>Hzn987*uat</Password>
+	<KullandigiServisler>GenelServisler</KullandigiServisler>
+</record>
+<record>
+	<Ortam>PROD11g</Ortam>
+	<BeceriMerkeziVeIlgili>Hazine-Gürkan Kuş</BeceriMerkeziVeIlgili>
+	<Username>hazineUser</Username>
+	<Password>PRD_139*pwd</Password>
+	<KullandigiServisler>Sinerji/ProxyServices</KullandigiServisler>
+ </record>
+
+"-Dprogram.name=JBossTools: Red Hat JBoss EAP 7.0" -server -Xms2g -Xmx2g -XX:MetaspaceSize=1024m -XX:MaxMetaspaceSize=2048m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true "-Dorg.jboss.boot.log.file=C:\dev\jboss-eap-7.1\standalone\log\boot.log" "-Dlogging.configuration=file:C:\dev\jboss-eap-7.1\standalone\configuration\logging.properties" "-Djboss.home.dir=C:\dev\jboss-eap-7.1" -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost 
+
+\\SA000008\BTOrtak\536-AGL\AGL_FIS_SABLON_METAHESAP_TANIM\41-TRE_SABLON
+\\sa000008\SUMMIT_SOURCE\UYGULAMALAR\BO_INHOUSE\Gunsonu
+
+BSADEV log folder /weblog/applog/BSADEV
+jars - /projects/test/BSA/UAT/Libray
+
+atlas not updating - delete - C:\Users\n90005568\AppData\Local\Apps\2.0\9JB23423
+
+
+Birleşik değişiklik talebi
+3 server grubu için de deployment yapılacaktır (Venus,Batch ve Atlas). awasbsap09(172.21.18.71) - awasbsap10(172.21.18.72) Atlasın yeni prod serverlarıdır.
+
+
+*(Atlas) awasbsap13.aknet.akb [172.31.208.23] ve awasbsap14.aknet.akb [172.31.208.24] sunucularında /projects/prod/BSA/Library/Atlas/ path'ine en son preprod buildindeki aşağıdaki dosyalar kopyalanıp restart edilmelidir.
+*(Batch) BSAPAP03-04 sunucularında /projects/prod/BSA/Library/Batch/ path'ine en son preprod buildindeki aşağıdaki dosyalar kopyalanıp restart edilmelidir.
+BSA_treasury_core_Accounting.jar
+BSA_treasury_core_Common.jar
+BSA_treasury_core_Integration.jar
+BSA_treasury_core_Migration.jar
+BSA_treasury_core_Settlement.jar
+BSA_treasury_fixedincome_Bond.jar
+BSA_treasury_fixedincome_Repo.jar 
+BSA_treasury_Derivatives.jar
+BSA_treasury_ForeignExchange.jar
+BSA_treasury_MoneyMarket.jar
+
+Insert into BSA_BATCH_DEFINITION
+   (ID, BATCH_NAME, BATCH_GROUP_NAME, DESCRIPTION, PROCESS_SERVICE, 
+    THREAD_COUNT, CHUNK_COUNT)
+ Values
+   ('TRE631', 'TREASURY_DERIVATIVES_PREPARE_DERIVATIVE_REPORT_ONLINE_BATCH', 'TREASURY', 'Ekrandan derivative raporunu oluşturur', 'TREASURY_DERIVATIVES_PREPARE_DERIVATIVE_REPORT_BATCH', 
+    1, 1);
+update BSA_BATCH_DEFINITION set parameter_bag=null where batch_name='TREASURY_DERIVATIVES_PREPARE_DERIVATIVE_REPORT_ONLINE_BATCH';
+
+
+Insert into PBSA.BSA_CTG_TRANSACTION
+   (SERVICE_NAME, TRANSACTION_ID, CREATE_DATE)
+ Values
+   ('TREASURY_CORE_COMMON_INBOUND_SAVE_AUCTION_BID_MONITOR_RECORDS', 'YQY1', TO_TIMESTAMP('29/08/2019 13:37:25,179000000','fmDDfm/MM/YYYY HH24:MI:SS,FF'));
+Insert into PBSA.BSA_CTG_TRANSACTION
+   (SERVICE_NAME, TRANSACTION_ID, CREATE_DATE)
+ Values
+   ('TREASURY_CORE_COMMON_UPSERT_TR_AUCTION_BID', 'YQXT', TO_TIMESTAMP('28/08/2019 14:47:55,095000000','fmDDfm/MM/YYYY HH24:MI:SS,FF'));
+
+
+
+
+
+PLOG02
+172.31.134.224
+
+PBSA01_RAC
+172.31.131.14   
+172.31.131.44   
+172.31.131.197  
+172.31.131.198  
+172.31.131.13
+172.31.131.9
+172.31.131.10
+
+PATLS01_RAC
+172.31.129.83 
+172.31.129.84 
+172.31.129.85 
+172.31.129.77 
+172.31.129.78 
+172.31.128.221
+172.31.128.220
+172.31.130.33
+
+DEV
+http://wpfappdev/Deployment/Dev/publish.htm
+
+UAT
+http://tredeployuat.akbankpreprod.com/publish.htm
+
+PREPROD
+nn
+
+PROD
+https://tredeployment.akbank.com/publish.htm
+
+
+Atlas localde çalıştırma adımları
+1-ContrlPanel-> Add Remove Programs -> Turn Windows Featues On or Off -> Deliberatle Select All for Internet Information Serivces and beneath + Internet Information Hostable Webconsole 
+2-Copy C:\inetpub 
+3-cmd Cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319  and type aspnet_regiis -i
+4-run -> inetmgr -> select _CoreService ->> add as server -> hit restart from right panel
+
+
+ZENA tanım yaptırma BT Aksiyon
+Aksiyondeğişiklik yönetiminde aşağıdaki kategori üzerinden girebilirsiniz.
+Yazılım Ürünleri\Yönetim Ürünleri\Zena\
+Bilgilerinize, iyi çalışmalar dilerim.
+
+
+Merhaba,
+
+BSA preprod ortamında “BSA Core” ve “BSA Log” veri kaynaklarının gittikleri veritabanı aşağıdaki şekilde güncellenmiştir ve “RBSA” şeması tabloları yeni veritabanına mevcut halleriyle taşınmıştır.
+
+	Eski	Yeni
+Host name	tstorat-scan.akbank.com.tr	aoratstr-scan.akbank.com.tr
+Port	1525	1525
+Service name	TTST01_BSA	RTST01_BSA
+TNS	jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=tstorat-scan.akbank.com.tr)(PORT=1525))(ADDRESS=(PROTOCOL=TCP)(HOST=tstoratdg11.akbank.com.tr)(PORT=1525))(CONNECT_DATA=(SERVICE_NAME=TTST01_BSA)))	jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=aoratstr-scan.akbank.com.tr)(PORT=1525))(ADDRESS=(PROTOCOL=TCP)(HOST=aodgtstr11.akbank.com.tr)(PORT=1525))(CONNECT_DATA=(SERVICE_NAME=RTST01_BSA)))
+
+
+Insert into BSA_BATCH_DEFINITION
+   (ID, BATCH_NAME, BATCH_GROUP_NAME, DESCRIPTION, PROCESS_SERVICE, 
+    PARAMETER_BAG, THREAD_COUNT, CHUNK_COUNT)
+ Values
+   ('TRE478', 'TREASURY_DERIVATIVES_CONCAT_BD111GS_FILE_BATCH', 'TREASURY', 'Derivative BD111GS raporunu birleştirir', 'TREASURY_CORE_COMMON_CONCAT_REPORT_FOR_BAG_LIST', 
+    '<bag xsi:schemaLocation="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><pool><entry><key>REPORT_NAME</key><value xsi:type="bagValue"><bagValue>BD111GS_DRV</bagValue></value></entry></pool></bag>', 1, 1);
+COMMIT;
+
+
+
+ALTER TABLE TR_MONEY_MARKET ADD
+    (STUB_START_TYPE VARCHAR2(2),
+STUB_START_DATE DATE,
+STUB_END_TYPE VARCHAR2(2),
+STUB_END_DATE DATE,
+AMORTIZING_START_DATE DATE,
+AMORTIZING_END_DATE DATE,
+POST_FINANCE_FLAG VARCHAR2(1));
+
+
+	
+Ödeme Sistemleri Uygulamaları 	Cardinals
+Ödeme Sistemleri Uygulamaları 	AppLES   
+Hazine ve Yatırım Uygulamaları 	Integral  
+Ödeme Sistemleri Uygulamaları 	RealMerchant
+Ödeme Sistemleri Uygulamaları 	Teampact
+Ödeme Sistemleri Uygulamaları 	POSsible
+Ödeme Sistemleri Uygulamaları 	Kaizen Soze
+Ödeme Sistemleri Uygulamaları 	GoKart   
+Ödeme Sistemleri Uygulamaları 	Excalibur
+Ödeme Sistemleri Uygulamaları 	Debitus 
+Ödeme Sistemleri Uygulamaları 	Cardio
+Müşteri ve Satış Uygulamaları 	Sprinters
+Müşteri ve Satış Uygulamaları 	RedShield  
+Müşteri ve Satış Uygulamaları 	LordofCRM  
+Müşteri ve Satış Uygulamaları 	GreenDoc  
+Müşteri ve Satış Uygulamaları 	CRMPower
+Kurumsal Uygulamalar  			TitanİK     
+Kurumsal Uygulamalar  			Scrumble
+Kurumsal Uygulamalar  			Mobiland    
+Kurumsal Uygulamalar  			Flash
+Hazine ve Yatırım Uygulamaları 	AtlasBT   
+Hazine ve Yatırım Uygulamaları 	Supernova
+Dijital Bankacılık Uygulamaları_Uğur Tadık  	BT Direkt Mobil 
+Dijital Bankacılık Uygulamaları_Uğur Tadık  	Axess Mobil
+
+	
+	
+	<datasource jta="true" jndi-name="java:/jdbc/treasuryDS" pool-name="treasuryDS" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:oracle:thin:@tstorat-scan.akbank.com.tr:1525/TTST01_TTRE</connection-url>
+                    <driver>oracle</driver>
+                    <pool>
+                        <min-pool-size>10</min-pool-size>
+                        <max-pool-size>20</max-pool-size>
+                        <prefill>true</prefill>
+                    </pool>
+                    <security>
+                        <user-name>UTRE</user-name>
+                        <password>Akbank_123</password>
+                    </security>
+                </datasource>
+				
+				
+				
+				
+				Insert into BSA_BATCH_DEFINITION
+   (ID, BATCH_NAME, BATCH_GROUP_NAME, DESCRIPTION, PROCESS_SERVICE, PARAMETER_BAG,
+    THREAD_COUNT, CHUNK_COUNT)
+ Values
+   ('TRE933', 'TREASURY_CORE_COMMON_CONCAT_REPORT_FOR_BAG_LIST', 'TREASURY', 'Derivative raporunu birleştirir', 'TREASURY_CORE_COMMON_CONCAT_REPORT_FOR_BAG_LIST', null,
+    1, 1);
+COMMIT;
